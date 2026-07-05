@@ -532,8 +532,7 @@ model_terbaik = model_cnn if best_model_name == 'CNN' else model_lstm
 
 buku_lookup = books[['ISBN', 'Book-Title', 'Book-Author', 'Publisher']].drop_duplicates('ISBN')
 
-print("Model, scaler, dan lookup table tersedia di memori sesi ini (tidak")
-print("ditulis ke disk): model_terbaik, age_scaler, year_scaler, author_stats,")
+print("menggunakan model_terbaik, age_scaler, year_scaler, author_stats,")
 print("publisher_stats, isbn_stats, global_mean_train, fitur_kolom, buku_lookup.")
 
 
